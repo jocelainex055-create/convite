@@ -32,4 +32,6 @@ Site de convite editável via `config.json`.
 
 ---
 
-Inspirado na estrutura de https://convitepremium.com/Brenda
+
+
+

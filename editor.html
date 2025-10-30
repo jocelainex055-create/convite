@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor do Convite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .form { display: grid; gap: 12px; }
+      .field { display: grid; gap: 6px; }
+      .field input, .field textarea { padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: #0f1424; color: var(--text); }
+      .row { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+      .pill { display: inline-flex; gap: 8px; align-items: center; padding: 6px 10px; background: #0f1424; border: 1px solid var(--border); border-radius: 999px; }
+      .flex { display: flex; gap: 8px; flex-wrap: wrap; }
+      .small { color: var(--muted); font-size: 12px; }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Editor do Convite</h1>
+      <p class="small">Edite os campos e clique em "Baixar config.json" para salvar suas alterações. Coloque suas imagens na pasta <code>assets/</code> e referencie seus nomes nos campos.</p>
+      <form class="form" id="editorForm">
+        <div class="row">
+          <div class="field">
+            <label>Título do evento</label>
+            <input id="eventTitle" />
+          </div>
+          <div class="field">
+            <label>Nome do(a) homenageado(a)</label>
+            <input id="honoreeName" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>Data (YYYY-MM-DD)</label>
+            <input id="date" />
+          </div>
+          <div class="field">
+            <label>Hora (HH:mm)</label>
+            <input id="time" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>Local</label>
+            <input id="locationName" />
+          </div>
+          <div class="field">
+            <label>Endereço</label>
+            <input id="address" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>URL do mapa (Google Maps)</label>
+            <input id="mapsUrl" />
+          </div>
+          <div class="field">
+            <label>Número WhatsApp (+55 ...)</label>
+            <input id="whatsappNumber" />
+          </div>
+        </div>
+        <div class="field">
+          <label>Mensagem de confirmação (opcional)</label>
+          <input id="rsvpMessage" />
+        </div>
+        <div class="field">
+          <label>Imagem principal (caminho em assets/)</label>
+          <input id="heroImage" />
+        </div>
+        <div class="field">
+          <label>Mensagem da página</label>
+          <textarea id="message" rows="4"></textarea>
+        </div>
+        <div class="field">
+          <label>Galeria (1 por linha, caminhos em assets/)</label>
+          <textarea id="galleryImages" rows="4"></textarea>
+        </div>
+        <div class="field">
+          <label>Texto do dress code</label>
+          <textarea id="dressCodeText" rows="3"></textarea>
+        </div>
+        <div class="field">
+          <label>Cores do dress code (hex, separadas por vírgula)</label>
+          <input id="dressCodeColors" />
+        </div>
+        <div class="flex">
+          <button class="button primary" type="button" id="downloadBtn">Baixar config.json</button>
+          <label class="pill" for="uploadInput">
+            <input type="file" id="uploadInput" accept="application/JSON" style="display:none" />
+            Carregar config.json
+          </label>
+          <a class="button" href="index.html">Voltar ao convite</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="editor.js"></script>
+</body>
+</html>
+
+

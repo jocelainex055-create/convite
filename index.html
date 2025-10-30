@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <img id="heroImage" alt="Imagem destaque" class="hero__image" />
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <h1 id="eventTitle" class="title"></h1>
+            <p id="honoreeName" class="subtitle"></p>
+            <p id="eventDateTime" class="meta"></p>
+            <p id="eventLocation" class="meta"></p>
+            <div class="cta">
+                <a id="rsvpButton" class="button primary" target="_blank" rel="noopener">Confirmar presença</a>
+                <a id="routeButton" class="button" target="_blank" rel="noopener">Ver rota</a>
+                <button id="dressCodeOpen" class="button ghost" type="button">Dress code</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="messageSection" class="card">
+            <h2>Mensagem</h2>
+            <p id="eventMessage"></p>
+        </section>
+
+        <section id="gallerySection" class="card">
+            <h2>Galeria</h2>
+            <div id="gallery" class="gallery"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <small>Feito com carinho • <a href="editor.html">Editar convite</a></small>
+        </div>
+    </footer>
+
+    <dialog id="dressCodeModal" class="modal">
+        <form method="dialog" class="modal__card">
+            <button id="dressCodeClose" class="modal__close" aria-label="Fechar" type="submit">×</button>
+            <h3>Dress code</h3>
+            <p id="dressCodeText"></p>
+            <div id="dressCodePalette" class="palette"></div>
+        </form>
+    </dialog>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+

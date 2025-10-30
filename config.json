@@ -1,0 +1,30 @@
+{
+  "eventTitle": "Aniversário",
+  "honoreeName": "Brenda",
+  "date": "2025-11-30",
+  "time": "19:00",
+  "locationName": "Espaço Garden",
+  "address": "Rua das Flores, 123 - Centro, Cidade - UF",
+  "mapsUrl": "https://maps.google.com/?q=Rua%20das%20Flores%20123%20Centro",
+  "whatsappNumber": "+55 11 99999-9999",
+  "rsvpMessage": "Olá! Quero confirmar presença no evento da Brenda.",
+  "heroImage": "assets/hero.jpg",
+  "message": "Será uma noite especial para celebrarmos juntos! Sua presença tornará tudo ainda melhor.",
+  "galleryImages": [
+    "assets/gallery1.jpg",
+    "assets/gallery2.jpg",
+    "assets/gallery3.jpg"
+  ],
+  "dressCodeText": "Para deixar a celebração ainda mais especial, venha em tons azul claro, amarelo pastel, lilás, branco, laranja pastel, verde pastel ou lima.",
+  "dressCodeColors": [
+    "#c7e3ff",
+    "#ffe3a3",
+    "#e3c7ff",
+    "#ffffff",
+    "#ffc7a3",
+    "#c7ffd6",
+    "#ddff7c"
+  ]
+}
+
+
